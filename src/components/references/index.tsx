@@ -10,7 +10,10 @@ export default function References({ data }) {
 
       <div className="w-full px-8">
         <p className="text-dark_blue font-bold uppercase mb-4">Referências</p>
-        <p className="">{data.acf.referencias}</p>
+        <div
+          className="text-sm font-light"
+          dangerouslySetInnerHTML={{ __html: data.acf.referencias }}
+        ></div>
       </div>
     </section>
   );

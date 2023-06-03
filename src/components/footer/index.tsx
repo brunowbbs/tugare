@@ -2,8 +2,8 @@ import takeda from "../../assets/taked.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-32 py-10 flex bg-dark_blue justify-between">
-      <div className="w-full pr-2 text-white font-lato text-sm">
+    <footer className="px-32 py-8 flex bg-dark_blue justify-between">
+      <div className="w-full pr-2 text-white font-lato text-[12px]">
         <strong>Takeda Distribuidora Ltda.</strong>
         <p>
           Este site é de caráter exclusivamente informativo, destinado ao

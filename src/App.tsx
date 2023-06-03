@@ -21,14 +21,6 @@ function App() {
     return <h3>Erro ao buscar informação</h3>;
   }
 
-  // useEffect(() => {
-  //   fetch(
-  //     "https://teste.tugare.com.br/wp-json/wp/v2/pages/59?acf_format=standard"
-  //   )
-  //     .then((res) => res.json())
-  //     .then((data) => console.log(data));
-  // }, []);
-
   return (
     <div className="flex justify-center">
       <div className="max-w-[1440px] bg-bg">

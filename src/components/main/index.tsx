@@ -8,9 +8,10 @@ export default function Main({ data }) {
       </div>
 
       <div className="min-h-32 bg-dark_blue flex p-4 px-40 items-center">
-        <p className="text-white font-lato font-light uppercase mr-[10%] leading-7">
-          {data.acf.texto_banner_azul}
-        </p>
+        <div
+          className="text-white font-lato font-light mr-[10%] leading-7"
+          dangerouslySetInnerHTML={{ __html: data.acf.texto_banner_azul }}
+        ></div>
         <img
           src={data.acf.icone_banner_azul.url}
           className="h-[100%] object-contain"
@@ -18,7 +19,9 @@ export default function Main({ data }) {
       </div>
 
       <div className="mx-40 my-16 font-lato text-dark_gray">
-        <p className="font-bold">{data.acf.primeiro_conteudo}</p>
+        <div
+          dangerouslySetInnerHTML={{ __html: data.acf.primeiro_conteudo }}
+        ></div>
       </div>
     </main>
   );
