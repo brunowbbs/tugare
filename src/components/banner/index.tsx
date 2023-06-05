@@ -9,13 +9,14 @@ export default function Banner({ acf }: ContentType) {
         dangerouslySetInnerHTML={{ __html: acf?.titulo_secao_2 || "" }}
         className="text-center capitalize text-dark_blue"
       ></div>
-      <Fade bottom>
-        <div className="flex justify-center gap-10 mt-12 flex-wrap">
-          {acf?.imagens_formulacao.map((img) => (
+
+      <div className="flex justify-center gap-10 mt-12 flex-wrap">
+        {acf?.imagens_formulacao.map((img, idx) => (
+          <Fade left={idx % 2 === 0} right={idx % 2 !== 0}>
             <img src={img.imagem.sizes.large} width={200} />
-          ))}
-        </div>
-      </Fade>
+          </Fade>
+        ))}
+      </div>
     </section>
   );
 }
