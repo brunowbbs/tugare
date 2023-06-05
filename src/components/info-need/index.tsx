@@ -1,7 +1,7 @@
 import { Fade } from "react-reveal";
 
 import fluid from "../../assets/fluid_blue_icon.svg";
-import { ContentType } from "../../hooks/useFetch";
+import { ContentType } from "../../hooks/types";
 
 export default function InfoNeed({ acf }: ContentType) {
   return (

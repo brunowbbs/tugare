@@ -1,7 +1,7 @@
 import { Fade } from "react-reveal";
 
 import arrow from "../../assets/arrow_up.svg";
-import { ContentType } from "../../hooks/useFetch";
+import { ContentType } from "../../hooks/types";
 
 export default function References({ acf }: ContentType) {
   return (

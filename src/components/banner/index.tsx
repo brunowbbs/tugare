@@ -1,4 +1,4 @@
-import { ContentType } from "../../hooks/useFetch";
+import { ContentType } from "../../hooks/types";
 
 export default function Banner({ acf }: ContentType) {
   return (

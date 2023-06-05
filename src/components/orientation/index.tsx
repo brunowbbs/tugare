@@ -1,5 +1,5 @@
 import { Fade } from "react-reveal";
-import { ContentType } from "../../hooks/useFetch";
+import { ContentType } from "../../hooks/types";
 
 export default function Orientation({ acf }: ContentType) {
   return (
