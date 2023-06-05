@@ -24,15 +24,15 @@ function App() {
   return (
     <div className="flex justify-center">
       <div className="max-w-[1440px] bg-bg">
-        <Navbar data={data} />
-        <Main data={data} />
-        <Banner data={data} />
-        <InfoNeed data={data} />
-        <HowNpt data={data} />
-        <Orientation data={data} />
-        <Complication data={data} />
-        <References data={data} />
-        <Menu data={data} />
+        <Navbar />
+        <Main {...data} />
+        <Banner {...data} />
+        <InfoNeed {...data} />
+        <HowNpt />
+        <Orientation {...data} />
+        <Complication {...data} />
+        <References {...data} />
+        <Menu />
         <Footer />
       </div>
     </div>

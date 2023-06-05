@@ -1,13 +1,14 @@
 import { Fade } from "react-reveal";
 
 import fluid from "../../assets/fluid_blue_icon.svg";
+import { ContentType } from "../../hooks/useFetch";
 
-export default function InfoNeed({ data }) {
+export default function InfoNeed({ acf }: ContentType) {
   return (
-    <section className="mx-40 flex flex-col items-center mt-20 text-dark_gray">
+    <section className="sm:mx-40 mx-10 flex flex-col items-center mt-20 text-dark_gray">
       <Fade bottom>
         <div className="">
-          {data.acf?.secao_3.map((item) => (
+          {acf?.secao_3.map((item) => (
             <div className="mb-10">
               <h3 className="text-xl text-dark_blue font-lato">
                 {item.titulo}
@@ -28,16 +29,16 @@ export default function InfoNeed({ data }) {
           </h4>
           <div className="flex items-end">
             <div>
-              {data.acf?.necessidades_para_npd.map(({ item }) => (
+              {acf?.necessidades_para_npd.map(({ item }) => (
                 <div className="flex my-10">
-                  <div className="w-full max-w-[120px] min-w-[60px] mr-16 h-2 bg-dark_green rounded-br-full rounded-tr-full"></div>
+                  <div className="w-full sm:max-w-[120px] max-w-[40px] min-w-[60px] sm:mr-16 mr-6 h-2 bg-dark_green rounded-br-full rounded-tr-full"></div>
                   <p className="-mt-2 text-sm font-lato font-light max-w-[420px]">
                     {item}
                   </p>
                 </div>
               ))}
             </div>
-            <img src={fluid} className="mx-10 w-[80px]" />
+            <img src={fluid} className=" sm:mx-10 mx-2  sm:w-[80px] w-[40px]" />
           </div>
         </div>
       </Fade>

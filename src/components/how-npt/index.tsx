@@ -8,31 +8,31 @@ import icon_5 from "../../assets/icon_5.svg";
 
 import arrow from "../../assets/arrow_up.svg";
 
-export default function HowNpt({ data }: unknown) {
+export default function HowNpt() {
   return (
     <Fade left>
-      <section className="bg-white mx-40 shadow-md text-dark_gray">
+      <section className="bg-white sm:mx-40 mx-10 shadow-md text-dark_gray">
         <div>
           <div className="flex bg-light_orange h-14 justify-between items-center">
             <div className="flex items-center">
-              <div className="w-32 h-2 bg-dark_orange mr-4 rounded-br-full	rounded-tr-full"></div>
+              <div className="sm:w-32 w-16 h-2 bg-dark_orange mr-4 rounded-br-full rounded-tr-full"></div>
               <h3 className="text-dark_orange text-xl">
                 Como é realizada a NPT
               </h3>
             </div>
-            <div className="bg-dark_orange w-16 h-14 rounded-bl-full	rounded-tl-full flex justify-end p-3">
+            <div className="bg-dark_orange w-16 h-14 rounded-bl-full rounded-tl-full flex justify-end p-3">
               <img src={arrow} />
             </div>
           </div>
 
-          <div className="px-14 py-16">
+          <div className="sm:px-14 px-4 py-16">
             {dataNpt.map((item) => (
               <div className="flex mb-6 items-center">
                 <div className="w-[40px] h-[40px] bg-dark_orange rounded-full p-[10px] flex justify-center items-center">
                   <img src={item.img} className="w-8 h-8 object-scale-down" />
                 </div>
                 <div
-                  className="w-full ml-10 text-sm"
+                  className="w-full sm:ml-10 ml-4 text-sm"
                   dangerouslySetInnerHTML={{ __html: item.text }}
                 ></div>
               </div>

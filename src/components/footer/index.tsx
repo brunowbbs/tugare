@@ -2,7 +2,7 @@ import takeda from "../../assets/taked.svg";
 
 export default function Footer() {
   return (
-    <footer className="px-32 py-8 flex bg-dark_blue justify-between">
+    <footer className="sm:px-32 px-2 py-8 flex bg-dark_blue justify-between">
       <div className="w-full pr-2 text-white font-lato text-[12px]">
         <strong>Takeda Distribuidora Ltda.</strong>
         <p>
@@ -16,7 +16,7 @@ export default function Footer() {
         </p>
         <p>C-ANPROM/BR/REV/0064 - Material produzido em junho/2022. </p>
       </div>
-      <img src={takeda} />
+      <img src={takeda} className="sm:mt-0 mt-4" />
     </footer>
   );
 }
