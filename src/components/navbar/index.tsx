@@ -45,7 +45,7 @@ export default function Navbar() {
       <ul
         className={`${
           isOpen ? "flex" : "hidden"
-        } w-full mt-12 bg-white absolute flex-col flex-1 justify-between items-center font-normal text-dark_green uppercase text-sm flex-wrap gap-4 py-4 shadow-md`}
+        } z-50 w-full mt-12 bg-white absolute flex-col flex-1 justify-between items-center font-normal text-dark_green uppercase text-sm flex-wrap gap-4 py-4 shadow-md`}
       >
         <li className="font-[400] cursor-pointer">Home</li>
         <li className="font-[400] cursor-pointer">Conheça a doença</li>
